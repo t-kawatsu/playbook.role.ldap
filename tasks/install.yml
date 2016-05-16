@@ -1,5 +1,5 @@
 ---
-- name: install libraries for LDAP
+- name: Install libraries for LDAP
   yum: state=present name={{ item }}
   with_items:
     - openldap

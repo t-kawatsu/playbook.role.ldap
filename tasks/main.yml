@@ -10,3 +10,9 @@
   tags: 
     - openldap
     - configure
+
+- include: pam.yml
+  sudo: true
+  tags:
+    - openldap
+    - pam

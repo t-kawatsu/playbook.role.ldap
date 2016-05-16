@@ -1,0 +1,36 @@
+---
+- name: Install libraries for LDAP linux auth
+  yum: state=present name={{ item }}
+  with_items:
+    - nscd
+    - nss-pam-ldapd
+
+- name: Change nscd conf
+  replace: >
+    dest=/etc/nslcd.conf 
+    regexp='dc=example,dc=com' 
+    replace='dc=jogoj,dc=com' 
+    backup=yes
+
+- name: Change nsswitch conf
+  replace: >
+    dest=/etc/nsswitch.conf
+    regexp='^passwd:.*$'
+    replace='passwd:     files sss ldap'
+    backup=yes
+
+- name: Change nsswitch conf
+  replace: >
+    dest=/etc/nsswitch.conf
+    regexp='^shadow:.*$'
+    replace='shadow:     files sss ldap'
+
+- name: Change nsswitch conf
+  replace: >
+    dest=/etc/nsswitch.conf
+    regexp='^group:.*$'
+    replace='group:      files sss ldap'
+
+- name: Restart nscd
+  service: name=nscd state=restarted enabled=true
+

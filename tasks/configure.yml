@@ -1,6 +1,6 @@
 ---
 - name: Stop slapd
-  service: name=slapd state=stopped
+  service: name=slapd state=stopped enabled=true
 
 - name: Remove slapd dir
   file: >
@@ -33,7 +33,6 @@
     owner=root
     group=root
     mode=0644
-  notify: restart slapd
 
 - name: Remove OpenLDAP tmp dir
   file: >
@@ -96,6 +95,12 @@
     mode=444
   with_fileglob:
     - schema/*
+
+- name: Remove OpenLDAP tmp dir
+  file: >
+    path={{ openldap_server_workdir }}
+    state=absent
+    force=yes
 
 - name: Restart slapd
   service: name=slapd state=restarted
