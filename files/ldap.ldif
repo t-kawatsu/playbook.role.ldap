@@ -1,0 +1,774 @@
+dn: dc=jogoj,dc=com
+objectClass: dcObject
+objectClass: organization
+dc: jogoj
+o: JOGOJ Inc.
+structuralObjectClass: organization
+entryUUID: 70b07f48-3219-1035-9485-d55bdb4f2efd
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151208170408Z
+entryCSN: 20151208170408.685094Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151208170408Z
+
+dn: cn=Manager,dc=jogoj,dc=com
+objectClass: organizationalRole
+cn: Manager
+description: Directory Manager
+structuralObjectClass: organizationalRole
+entryUUID: 70b3e5d4-3219-1035-9486-d55bdb4f2efd
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151208170408Z
+entryCSN: 20151208170408.707380Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151208170408Z
+
+dn: ou=People,dc=jogoj,dc=com
+objectClass: organizationalUnit
+ou: People
+structuralObjectClass: organizationalUnit
+entryUUID: 70b7020a-3219-1035-9487-d55bdb4f2efd
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151208170408Z
+entryCSN: 20151208170408.727762Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151208170408Z
+
+dn: ou=Group,dc=jogoj,dc=com
+objectClass: organizationalUnit
+ou: Group
+structuralObjectClass: organizationalUnit
+entryUUID: 70b9fff0-3219-1035-9488-d55bdb4f2efd
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151208170408Z
+entryCSN: 20151208170408.747371Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151208170408Z
+
+dn: cn=git,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: git
+gidNumber: 400
+structuralObjectClass: posixGroup
+entryUUID: 6a3373b0-32a9-1035-9989-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+entryCSN: 20151209101445.328327Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151209101445Z
+
+dn: cn=svn,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: svn
+gidNumber: 401
+structuralObjectClass: posixGroup
+entryUUID: 6a357fa2-32a9-1035-998a-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+entryCSN: 20151209101445.341743Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151209101445Z
+
+dn: cn=apache,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: apache
+gidNumber: 402
+structuralObjectClass: posixGroup
+entryUUID: 6a36fa58-32a9-1035-998b-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+entryCSN: 20151209101445.351439Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151209101445Z
+
+dn: cn=nginx,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: nginx
+gidNumber: 403
+structuralObjectClass: posixGroup
+entryUUID: 6a383cc4-32a9-1035-998c-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+entryCSN: 20151209101445.359694Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151209101445Z
+
+dn: cn=smb,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: smb
+gidNumber: 404
+structuralObjectClass: posixGroup
+entryUUID: 6a397bde-32a9-1035-998d-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+entryCSN: 20151209101445.367862Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151209101445Z
+
+dn: cn=jogoj,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: jogoj
+gidNumber: 500
+structuralObjectClass: posixGroup
+entryUUID: 6a3ae5aa-32a9-1035-998e-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+entryCSN: 20151209101445.377121Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151209101445Z
+
+dn: cn=develop,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: develop
+gidNumber: 510
+structuralObjectClass: posixGroup
+entryUUID: 6a3c201e-32a9-1035-998f-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+memberUid: t-kawatsu
+entryCSN: 20160108174550.018572Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20160108174550Z
+
+dn: cn=design,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: design
+gidNumber: 511
+structuralObjectClass: posixGroup
+entryUUID: 6a3d6b40-32a9-1035-9990-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+entryCSN: 20151209101445.393651Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151209101445Z
+
+dn: cn=sales,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: sales
+gidNumber: 520
+structuralObjectClass: posixGroup
+entryUUID: 6a3e7e54-32a9-1035-9991-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+entryCSN: 20151209101445.400694Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151209101445Z
+
+dn: cn=market,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: market
+gidNumber: 530
+structuralObjectClass: posixGroup
+entryUUID: 6a3fbc2e-32a9-1035-9992-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209101445Z
+entryCSN: 20151209101445.408831Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151209101445Z
+
+dn: uid=t-kawatsu,ou=People,dc=jogoj,dc=com
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+objectClass: ldapPublicKey
+sn: kawatsu
+cn: tatsuru
+uid: t-kawatsu
+gidNumber: 500
+homeDirectory: /home/t-kawatsu
+loginShell: /bin/bash
+mail: t-kawatsu@jogoj.com
+structuralObjectClass: inetOrgPerson
+entryUUID: 1fbde32a-32ad-1035-9994-8df57da036da
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151209104118Z
+uidNumber: 1001
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-1002
+userPassword:: e1NTSEF9dXpBMjl5L3ZlaEFwTExaQzhxMGJxNmRTK0pXL0RCOFU=
+sambaNTPassword: 23D85281AF6BCACC2B2FD1831E1857F8
+sambaPasswordHistory: 00000000000000000000000000000000000000000000000000000000
+ 00000000
+sambaPwdLastSet: 1449924656
+sambaAcctFlags: [U          ]
+sshPublicKey:: c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCQVFDdGtsQzZaMXY
+ 4Q1JNbGs0WVQwNlFXTW43V2dyOHkrM2Y0OW5XNkRmaDdQT3k4TzJrSHR1OXI2M1JxZXhiZUpnWTZ1
+ eC80YWpjQ1F3azZ6ZDlnZm9MOVkrU2NscmtEWGZQNUVzMVBlTWVBdk91NXo4bmkxYS9lMjBKUzJLd
+ 1VSRGM3cGIrYTc4S3REcGY1UXUvNG5QYk5XbCtzWkJkQTdxMVI1d0xVbktKV29pOUhpU25tajdUV0
+ EyNU9JQTU4ZTNNVzFBOW9jVVRXSk4yZllNM0hpdVRHeGxTZ01TeWgydUZ0eDY5cjFUMysrS1dtVU1
+ ieTRPUVBZQXZERTVsS294Y1lYdnk4VXROK0hySHhqSHY4NWpmbHZiRzl0OTZMZ0ZxYlNKQTBPSTVq
+ bXdFWitiOGcvaXZGcmNxYXZEanhRMllRdmtqdEc2am9KdWplMVF2ZTZGTk4g
+entryCSN: 20151223074756.700659Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151223074756Z
+
+dn: ou=Computers,dc=jogoj,dc=com
+objectClass: organizationalUnit
+ou: Computers
+structuralObjectClass: organizationalUnit
+entryUUID: b4462798-3517-1035-847b-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212122916.568110Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212122916Z
+
+dn: ou=Idmap,dc=jogoj,dc=com
+objectClass: organizationalUnit
+ou: Idmap
+structuralObjectClass: organizationalUnit
+entryUUID: b448e942-3517-1035-847c-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212122916.586176Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212122916Z
+
+dn: sambaDomainName=MYGROUP,dc=jogoj,dc=com
+objectClass: sambaDomain
+sambaDomainName: MYGROUP
+sambaSID: S-1-5-21-2657706914-3273194043-364545675
+structuralObjectClass: sambaDomain
+entryUUID: b44b3238-3517-1035-847d-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+sambaNextRid: 1015
+entryCSN: 20151212142304.667956Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212142304Z
+
+dn: sambaDomainName=sambaDomain,dc=jogoj,dc=com
+objectClass: sambaDomain
+objectClass: sambaUnixIdPool
+sambaDomainName: sambaDomain
+sambaSID: S-1-5-21-2657706914-3273194043-364545675
+gidNumber: 1000
+structuralObjectClass: sambaDomain
+entryUUID: b44dd0c4-3517-1035-847e-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+uidNumber: 1012
+entryCSN: 20151212142304.150853Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212142304Z
+
+dn: cn=Domain Admins,ou=Group,dc=jogoj,dc=com
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Domain Admins
+gidNumber: 512
+description: Netbios Domain Administrators
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-512
+sambaGroupType: 2
+displayName: Domain Admins
+structuralObjectClass: posixGroup
+entryUUID: b4565032-3517-1035-8481-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212125250.594331Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212125250Z
+
+dn: cn=Domain Users,ou=Group,dc=jogoj,dc=com
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Domain Users
+gidNumber: 513
+description: Netbios Domain Users
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-513
+sambaGroupType: 2
+displayName: Domain Users
+structuralObjectClass: posixGroup
+entryUUID: b459160a-3517-1035-8482-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212122916.692180Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212122916Z
+
+dn: cn=Domain Guests,ou=Group,dc=jogoj,dc=com
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Domain Guests
+gidNumber: 514
+description: Netbios Domain Guests Users
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-514
+sambaGroupType: 2
+displayName: Domain Guests
+structuralObjectClass: posixGroup
+entryUUID: b45b8232-3517-1035-8483-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+memberUid: tashima
+memberUid: s-iezumi
+memberUid: e-kuki
+memberUid: h-mori
+memberUid: m-nakane
+memberUid: k-ebihara
+memberUid: r-shudo
+entryCSN: 20151212142304.847373Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212142304Z
+
+dn: cn=Domain Computers,ou=Group,dc=jogoj,dc=com
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Domain Computers
+gidNumber: 515
+description: Netbios Domain Computers accounts
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-515
+sambaGroupType: 2
+displayName: Domain Computers
+structuralObjectClass: posixGroup
+entryUUID: b45dd528-3517-1035-8484-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212122916.723287Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212122916Z
+
+dn: cn=Administrators,ou=Group,dc=jogoj,dc=com
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Administrators
+gidNumber: 544
+description: Netbios Domain Members can fully administer the computer/sambaDom
+ ainName
+sambaSID: S-1-5-32-544
+sambaGroupType: 4
+displayName: Administrators
+structuralObjectClass: posixGroup
+entryUUID: b4605136-3517-1035-8485-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212122916.739569Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212122916Z
+
+dn: cn=Account Operators,ou=Group,dc=jogoj,dc=com
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Account Operators
+gidNumber: 548
+description: Netbios Domain Users to manipulate users accounts
+sambaSID: S-1-5-32-548
+sambaGroupType: 4
+displayName: Account Operators
+structuralObjectClass: posixGroup
+entryUUID: b462abc0-3517-1035-8486-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212122916.754995Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212122916Z
+
+dn: cn=Print Operators,ou=Group,dc=jogoj,dc=com
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Print Operators
+gidNumber: 550
+description: Netbios Domain Print Operators
+sambaSID: S-1-5-32-550
+sambaGroupType: 4
+displayName: Print Operators
+structuralObjectClass: posixGroup
+entryUUID: b464fa88-3517-1035-8487-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212122916.770100Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212122916Z
+
+dn: cn=Backup Operators,ou=Group,dc=jogoj,dc=com
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Backup Operators
+gidNumber: 551
+description: Netbios Domain Members can bypass file security to back up files
+sambaSID: S-1-5-32-551
+sambaGroupType: 4
+displayName: Backup Operators
+structuralObjectClass: posixGroup
+entryUUID: b467644e-3517-1035-8488-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212122916.785914Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212122916Z
+
+dn: cn=Replicators,ou=Group,dc=jogoj,dc=com
+objectClass: top
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+cn: Replicators
+gidNumber: 552
+description: Netbios Domain Supports file replication in a sambaDomainName
+sambaSID: S-1-5-32-552
+sambaGroupType: 4
+displayName: Replicators
+structuralObjectClass: posixGroup
+entryUUID: b469cde2-3517-1035-8489-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212122916Z
+entryCSN: 20151212122916.801744Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212122916Z
+
+dn: sambaDomainName=SMB,dc=jogoj,dc=com
+sambaDomainName: SMB
+sambaSID: S-1-5-21-2657706914-3273194043-364545675
+sambaAlgorithmicRidBase: 1000
+objectClass: sambaDomain
+sambaNextUserRid: 1000
+structuralObjectClass: sambaDomain
+entryUUID: abd4c6c2-3518-1035-848a-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212123611Z
+sambaMinPwdLength: 5
+sambaPwdHistoryLength: 0
+sambaLogonToChgPwd: 0
+sambaMaxPwdAge: -1
+sambaMinPwdAge: 0
+sambaLockoutDuration: 30
+sambaLockoutObservationWindow: 30
+sambaLockoutThreshold: 0
+sambaForceLogoff: -1
+sambaRefuseMachinePwdChange: 0
+sambaNextRid: 1002
+entryCSN: 20151212125056.066628Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212125056Z
+
+dn: uid=tashima,ou=People,dc=jogoj,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: tashima
+sn: tashima
+uid: tashima
+uidNumber: 1005
+gidNumber: 514
+loginShell: /bin/false
+gecos: System User
+givenName: tashima
+structuralObjectClass: inetOrgPerson
+entryUUID: 0aaca5e6-3525-1035-8492-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212140444Z
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: tashima
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-1009
+sambaPrimaryGroupSID: S-1-5-21-2657706914-3273194043-364545675-514
+sambaLogonScript: logon.bat
+sambaHomePath: \\PDC-SRV\tashima
+sambaHomeDrive: H:
+sambaLMPassword: A02B3267BCF257F1AAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: 554F95CBDB77006FA105AC416160E9F5
+sambaPwdLastSet: 1449929091
+sambaPwdMustChange: 1453817091
+userPassword:: e01ENX1wTnB1SnVHQ0pYWVhpYjJRYThoZHVnPT0=
+shadowLastChange: 16781
+shadowMax: 45
+homeDirectory: /dev/null
+entryCSN: 20151212141135.925165Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212141135Z
+
+dn: uid=s-iezumi,ou=People,dc=jogoj,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: s-iezumi
+sn: s-iezumi
+uid: s-iezumi
+uidNumber: 1006
+gidNumber: 514
+loginShell: /bin/false
+gecos: System User
+givenName: s-iezumi
+structuralObjectClass: inetOrgPerson
+entryUUID: a539f91a-3525-1035-8493-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212140904Z
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: s-iezumi
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-1010
+sambaPrimaryGroupSID: S-1-5-21-2657706914-3273194043-364545675-514
+sambaLogonScript: logon.bat
+sambaHomePath: \\PDC-SRV\s-iezumi
+sambaHomeDrive: H:
+sambaLMPassword: 8BD62F5FA002D24CF7E62F36F8DB5AE6
+sambaAcctFlags: [U]
+sambaNTPassword: 2E80DBC1DD9C4B778B7BD18FBAA95918
+sambaPwdLastSet: 1449929353
+sambaPwdMustChange: 1453817353
+userPassword:: e01ENX1wTzg4YVdrclhjV1FqWDRuTDJiQWh3PT0=
+shadowLastChange: 16781
+shadowMax: 45
+homeDirectory: /dev/null
+entryCSN: 20151212141121.745243Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212141121Z
+
+dn: uid=e-kuki,ou=People,dc=jogoj,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: e-kuki
+sn: e-kuki
+uid: e-kuki
+uidNumber: 1007
+gidNumber: 514
+homeDirectory: /dev/null
+loginShell: /bin/false
+gecos: System User
+givenName: e-kuki
+structuralObjectClass: inetOrgPerson
+entryUUID: 2b6b8b66-3526-1035-8494-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212141249Z
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: e-kuki
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-1011
+sambaPrimaryGroupSID: S-1-5-21-2657706914-3273194043-364545675-514
+sambaLogonScript: logon.bat
+sambaHomePath: \\PDC-SRV\e-kuki
+sambaHomeDrive: H:
+sambaLMPassword: F144ACBE2D4D994EAAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: 32CB6CC3C351CDBA598E296E4929DF66
+sambaPwdLastSet: 1449929576
+sambaPwdMustChange: 1453817576
+userPassword:: e01ENX0vandmOHRiNGh5RzVLNCtYM3pIbEpnPT0=
+shadowLastChange: 16781
+shadowMax: 45
+entryCSN: 20151212141256.664436Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212141256Z
+
+dn: uid=h-mori,ou=People,dc=jogoj,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: h-mori
+sn: h-mori
+uid: h-mori
+uidNumber: 1008
+gidNumber: 514
+homeDirectory: /dev/null
+loginShell: /bin/false
+gecos: System User
+givenName: h-mori
+structuralObjectClass: inetOrgPerson
+entryUUID: 4e5a23d0-3526-1035-8495-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212141348Z
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: h-mori
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-1012
+sambaPrimaryGroupSID: S-1-5-21-2657706914-3273194043-364545675-514
+sambaLogonScript: logon.bat
+sambaHomePath: \\PDC-SRV\h-mori
+sambaHomeDrive: H:
+sambaLMPassword: F79B97AA28BF9CC3AAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: FB1FD4E2707FB3D5685FCD772904054B
+sambaPwdLastSet: 1449929634
+sambaPwdMustChange: 1453817634
+userPassword:: e01ENX1rb3Z2QU9lL0d3M3JVSjlXTUhsRStBPT0=
+shadowLastChange: 16781
+shadowMax: 45
+entryCSN: 20151212141354.708539Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212141354Z
+
+dn: uid=m-nakane,ou=People,dc=jogoj,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: m-nakane
+sn: m-nakane
+uid: m-nakane
+uidNumber: 1009
+gidNumber: 514
+homeDirectory: /dev/null
+loginShell: /bin/false
+gecos: System User
+givenName: m-nakane
+structuralObjectClass: inetOrgPerson
+entryUUID: 37790c5c-3527-1035-8496-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212142019Z
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: m-nakane
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-1013
+sambaPrimaryGroupSID: S-1-5-21-2657706914-3273194043-364545675-514
+sambaLogonScript: logon.bat
+sambaHomePath: \\PDC-SRV\m-nakane
+sambaHomeDrive: H:
+sambaLMPassword: 306DF2E5C9035FB517306D272A9441BB
+sambaAcctFlags: [U]
+sambaNTPassword: B1D35E42873C9426E91D4016D1A56657
+sambaPwdLastSet: 1449930027
+sambaPwdMustChange: 1453818027
+userPassword:: e01ENX1CTEplVVNlMnZvcUxwQjJSYnNWbTBBPT0=
+shadowLastChange: 16781
+shadowMax: 45
+entryCSN: 20151212142027.499493Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212142027Z
+
+dn: uid=k-ebihara,ou=People,dc=jogoj,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: k-ebihara
+sn: k-ebihara
+uid: k-ebihara
+uidNumber: 1010
+gidNumber: 514
+homeDirectory: /dev/null
+loginShell: /bin/false
+gecos: System User
+givenName: k-ebihara
+structuralObjectClass: inetOrgPerson
+entryUUID: 416bcd26-3527-1035-8497-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212142035Z
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: k-ebihara
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-1014
+sambaPrimaryGroupSID: S-1-5-21-2657706914-3273194043-364545675-514
+sambaLogonScript: logon.bat
+sambaHomePath: \\PDC-SRV\k-ebihara
+sambaHomeDrive: H:
+sambaLMPassword: D37ECDA1F52618E646CFFF875CBE001D
+sambaAcctFlags: [U]
+sambaNTPassword: CC8264F0841D790E915350D7EEEE2475
+sambaPwdLastSet: 1449930044
+sambaPwdMustChange: 1453818044
+userPassword:: e01ENX1UaTJKa2NJbnRwamdBb0dkU0poR3pnPT0=
+shadowLastChange: 16781
+shadowMax: 45
+entryCSN: 20151212142044.585982Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212142044Z
+
+dn: uid=r-shudo,ou=People,dc=jogoj,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+cn: r-shudo
+sn: r-shudo
+uid: r-shudo
+uidNumber: 1011
+gidNumber: 514
+homeDirectory: /dev/null
+loginShell: /bin/false
+gecos: System User
+givenName: r-shudo
+structuralObjectClass: inetOrgPerson
+entryUUID: 9a28bdd4-3527-1035-8498-a70b2219d2f2
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20151212142304Z
+sambaLogonTime: 0
+sambaLogoffTime: 2147483647
+sambaKickoffTime: 2147483647
+sambaPwdCanChange: 0
+displayName: r-shudo
+sambaSID: S-1-5-21-2657706914-3273194043-364545675-1015
+sambaPrimaryGroupSID: S-1-5-21-2657706914-3273194043-364545675-514
+sambaLogonScript: logon.bat
+sambaHomePath: \\PDC-SRV\r-shudo
+sambaHomeDrive: H:
+sambaLMPassword: 1635D0801E2F6557AAD3B435B51404EE
+sambaAcctFlags: [U]
+sambaNTPassword: 67632564614F72689CA5E65666E3416B
+sambaPwdLastSet: 1449930191
+sambaPwdMustChange: 1453818191
+userPassword:: e01ENX13UWpXRmVTVGNIdVduZEN2V093YkN3PT0=
+shadowLastChange: 16781
+shadowMax: 45
+entryCSN: 20151212142311.795098Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20151212142311Z
+
+dn: cn=rbenv,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: rbenv
+gidNumber: 405
+structuralObjectClass: posixGroup
+entryUUID: 074c5802-4a78-1035-9229-b504ade23082
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20160108172141Z
+entryCSN: 20160108172141.963810Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20160108172141Z
+
+dn: cn=admin,ou=Group,dc=jogoj,dc=com
+objectClass: posixGroup
+cn: admin
+gidNumber: 501
+structuralObjectClass: posixGroup
+entryUUID: 074fec9c-4a78-1035-922a-b504ade23082
+creatorsName: cn=Manager,dc=jogoj,dc=com
+createTimestamp: 20160108172141Z
+memberUid: t-kawatsu
+entryCSN: 20160108174414.418970Z#000000#000#000000
+modifiersName: cn=Manager,dc=jogoj,dc=com
+modifyTimestamp: 20160108174414Z
+

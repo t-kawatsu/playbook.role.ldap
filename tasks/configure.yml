@@ -1,0 +1,102 @@
+---
+- name: Stop slapd
+  service: name=slapd state=stopped
+
+- name: Remove slapd dir
+  file: >
+    path=/etc/openldap/slapd.d
+    state=absent
+    force=yes
+
+- name: Create slapd dir
+  file: >
+    path=/etc/openldap/slapd.d
+    state=directory
+    mode=0700
+
+- name: Remove OpenLDAP lib dir
+  file: >
+    path=/var/lib/ldap
+    state=absent
+    force=yes
+
+- name: Create OpenLDAP lib dir
+  file: >
+    path=/var/lib/ldap
+    state=directory
+    mode=0700
+
+- name: Create OpenLDAP DB_CONFIG
+  template: >
+    src=DB_CONFIG.j2
+    dest=/var/lib/ldap/DB_CONFIG
+    owner=root
+    group=root
+    mode=0644
+  notify: restart slapd
+
+- name: Remove OpenLDAP tmp dir
+  file: >
+    path={{ openldap_server_workdir }}
+    state=absent
+    force=yes
+
+- name: Create OpenLDAP tmp dir
+  file: >
+    path={{ openldap_server_workdir }}
+    state=directory
+    mode=0600
+
+- name: Copy OpenLDAP config dump file
+  copy: >
+    src=ldap-config.ldif
+    dest={{ openldap_server_workdir }}/ldap-config.ldif
+    owner=root
+    group=root
+    mode=0600
+
+- name: Copy OpenLDAP directory dump file 
+  copy: >
+    src=ldap.ldif
+    dest={{ openldap_server_workdir }}/ldap.ldif
+    owner=root
+    group=root
+    mode=0600
+
+- name: Restore ldap config dump file
+  shell: slapadd -n0 -F /etc/openldap/slapd.d -l ldap-config.ldif
+  args:
+    chdir: "{{ openldap_server_workdir }}"
+
+- name: Restore ldap dump file
+  shell: slapadd -l ldap.ldif
+  args:
+    chdir: "{{ openldap_server_workdir }}"
+
+- name: Change slapd dir owner
+  file: >
+    path=/etc/openldap/slapd.d 
+    owner=ldap
+    group=ldap 
+    recurse=yes
+
+- name: Change OpenLDAP dir owner
+  file: >
+    path=/var/lib/ldap
+    owner=ldap
+    group=ldap
+    recurse=yes
+
+- name: Copy schema files
+  copy: >
+    src={{ item }} 
+    dest=/etc/openldap/schema/ 
+    owner=root 
+    group=root
+    mode=444
+  with_fileglob:
+    - schema/*
+
+- name: Restart slapd
+  service: name=slapd state=restarted
+

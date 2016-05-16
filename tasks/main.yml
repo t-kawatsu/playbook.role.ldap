@@ -1,23 +1,12 @@
 ---
-- name: install libraries for LDAP
-  yum: state=present name={{ item }}
-  with_items:
+- include: install.yml
+  sudo: true
+  tags: 
     - openldap
-    - openldap-servers 
-    - openldap-clients
+    - install
 
-- name: Generate the root password for ldap
-  shell: slappasswd -s {{ openldap_server_rootpw }}
-  register: root_password
-
-- name: start the slapd service
-  service: name=slapd state=started enabled=yes 
-
-- name: Create OpenLDAP DB_CONFIG
-  template: >
-    src=DB_CONFIG.j2
-    dest=/var/lib/ldap/DB_CONFIG
-    owner=root
-    group=root
-    mode=0644
-  notify: restart slapd
+- include: configure.yml
+  sudo: true
+  tags: 
+    - openldap
+    - configure

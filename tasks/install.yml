@@ -1,0 +1,25 @@
+---
+- name: install libraries for LDAP
+  yum: state=present name={{ item }}
+  with_items:
+    - openldap
+    - openldap-servers
+    - openldap-clients
+
+#- name: Generate the root password for ldap
+#  shell: slappasswd -s {{ openldap_server_rootpw }}
+#  register: root_password
+
+#- name: Copy OpenLDAP Root Password
+#  template: >
+#    src=rootPw.ldif.j2
+#    dest={{ openldap_server_workdir }}/rootPw.ldif
+#    owner=root
+#    group=root
+#    mode=0600
+
+#- name: Set OpenLDAP Root Password
+#  shell: ldapadd -Y EXTERNAL -H ldapi:// -f rootPw.ldif
+#  args:
+#    chdir: "{{ openldap_server_workdir }}"
+#  notify: restart slapd

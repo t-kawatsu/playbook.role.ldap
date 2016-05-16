@@ -1,2 +1,3 @@
 ---
-openldap_server_rootpw: 'hogehoge'
+openldap_server_rootpw: 'tqjr4q'
+openldap_server_workdir: /tmp/ldap-work

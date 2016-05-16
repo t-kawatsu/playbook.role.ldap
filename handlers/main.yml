@@ -4,3 +4,7 @@
 - name: restart slapd
   service: name=slapd state=restarted
   tags: openldap
+
+- name: stop slapd
+  service: name=slapd state=stopped
+  tags: openldap
